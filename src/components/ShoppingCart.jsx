@@ -12,12 +12,14 @@ function ShoppingCart() {
         setPage(nextPage)
     }
 
+    // Displays the Product page
     const renderCart = () => {
         return(
             <Basket />
         )
     }
 
+    // Displays the Cart page
     const renderProd = () => {
         return(
             <Options />

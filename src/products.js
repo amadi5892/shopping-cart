@@ -24,3 +24,5 @@ const products = [
         description: "100% Cotton Tshirt",
     }
 ]
+
+export default products;

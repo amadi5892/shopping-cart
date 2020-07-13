@@ -27,7 +27,7 @@ function ShoppingCart() {
     }
 
     return (
-        <div>
+        <div className="">
             <button onClick={() => toCart(CART_PAGE)} >Cart</button>
             <button onClick={() => toCart(PROD_PAGE)} >Prodcuts</button>
             {page === PROD_PAGE && renderProd()}

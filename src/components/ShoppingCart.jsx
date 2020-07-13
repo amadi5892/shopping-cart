@@ -8,6 +8,9 @@ function ShoppingCart() {
     // Initially sets our site to the Product Page
     const [page, setPage] = useState(PROD_PAGE);
 
+    // +++++++++++++++++++++CREATES PRODUCT PAGE VIEW+++++++++++++++++++
+
+    // Structures our items on our product page
     const Prod = () => {
         return(
             <div className="item">
@@ -27,12 +30,14 @@ function ShoppingCart() {
         )
     }
 
+    // Creates the component for our Product Page
     const createProd = () => {
         return(
             <Prod />
         )
     }
 
+    // Renders Product Page
     const renderProd = () => {
         return(
             <div>
@@ -47,6 +52,9 @@ function ShoppingCart() {
         )
     }
 
+    // +++++++++++++++++++++CREATES CART PAGE VIEW+++++++++++++++++++++
+
+    // Structures our Cart items...HOPEFULLY
     const Cart = () => {
         return(
             <div>
@@ -55,12 +63,14 @@ function ShoppingCart() {
         )
     }
 
+    // Creates the components for our Cart Page
     const createCart = () => {
         return(
             <Cart />
         )
     }
 
+    // Renders Cart Page
     const renderCart = () => {
         return(
             <div>
@@ -71,10 +81,12 @@ function ShoppingCart() {
         )
     }
 
+    // Sends us from page to page
     const toCart = (nextPage) => {
         setPage(nextPage)
     }
 
+    // Renders it all!!!!
     return(
         <div>
             <button onClick={() => toCart(CART_PAGE)} >Cart</button>
